@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+  body{
+    background-image: url(https://img.freepik.com/free-vector/low-poly-white-background-design_1017-33204.jpg);
+    
+
+  }
+  .container {
+    width: 800px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .profile-info {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .profile-info h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .profile-info p {
+    font-size: 20px;
+    color: #666;
+    margin: 10px 0;
+  }
+
+  .profile-info span {
+    font-weight: bold;
+  }
+
+  .edit-button {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="{% static 'image/avatar.jpg' %}" alt="Profile Image" class="profile-image">
+    <div class="profile-info">
+      <h1>Sekar</h1>
+      <p><span>Email:</span> sekar@example.com</p>
+      <p><span>City:</span>punjab</p>
+      <p><span>Country:</span>INDIA</p>
+      <p><span>About:</span> I am a web developer who loves to create amazing websites using HTML, CSS, and JavaScript.</p>
+      <p><span>Mobile:</span> +91 XXXXXXXXX</p>
+      <button class="edit-button" onclick="editProfile()">Edit Profile</button>
+    </div>
+  </div>
+  <script>
+    // Create a function to edit the profile information
+    function editProfile() {
+      // You can write your logic here to open a modal window, a form, or a new page where the user can edit their profile information
+      // For example, you can use window.open to open a new page
+      window.open("edit-profile.html")
+    }
+  </script>
+</body>
+</html>

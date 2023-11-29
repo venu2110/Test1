@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-info {
+    text-align: center;
+    max-width: 50%;
+    
+}
+
+.product-info img {
+    max-width: 100%;
+    box-shadow: 2px 2px 2px #333;
+    border: 1px solid #ddd;
+    border-color: greenyellow;
+}
+
+.order-form {
+    max-width: 70%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 5px black;
+    border-color: darkcyan;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.order-form h1 {
+    text-align: center;
+}
+
+.order-form label {
+    display: block;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: larger;
+    text-align: center;
+    
+}
+
+.order-form input {
+    width: 94%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: #333;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.order-form button {
+    display: inline-block;
+    padding: 10px 400px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.order-form button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+.order-form  button:hover::before {
+    width: 200px;
+    height: 100px;
+}
+
+.order-form  button:hover {
+    background-color: #0056b3;
+}
+body{
+    background-image: url(https://img.freepik.com/free-vector/low-poly-white-background-design_1017-33204.jpg);
+ 
+
+}
+.product-info p{
+    color: rgba(5, 194, 15, 0.801);
+    font-size: x-large;
+    text-shadow: #333;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
+    grid-gap: 30px; /* Gap between grid items */
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+.grid-item1 img{
+    max-inline-size: 55%;
+    padding-left: 25%;
+
+}
+.grid-item2 img{
+    max-inline-size:49.5%;
+    padding-left: 25%;
+
+}
+.grid-item3 img{
+    max-inline-size: 48%;
+    padding-left: 25%;
+
+}
+.grid-item4 img{
+    max-inline-size: 74%;
+    padding-left: 14%;
+}
+.grid-item5 img{
+    max-inline-size: 59%;
+    padding-left: 25%;
+}
+.grid-item6 img{
+    max-inline-size: 50%;
+    padding-left: 25%;
+}
+.grid-item7 img{
+    max-inline-size: 50%;
+    padding-left: 25%;
+}
+.grid-item8 img{
+    max-inline-size: 50%;
+    padding-left: 25%;
+}
+.grid-item9 img{
+    max-inline-size: 50%;
+    padding-left: 25%;
+}
+.grid-item10 img{
+    max-inline-size: 50%;
+    padding-left: 25%;
+}
+.grid-item1{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item2{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item3{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item4{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item5{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item6{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item7{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item8{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item9{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-item10{
+    box-shadow: 5px 5px 2px gray;
+    border: 1px solid #ddd;
+    border-color: rgb(146, 190, 255);
+    background-color: rgb(192, 201, 214);
+}
+.grid-container p{
+    text-align: center;
+}
+.grid-container h3{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.grid-container p{
+    color: black;
+    transition: color 0.3s; 
+  }
+.grid-container p:hover {
+    color: blue;
+  }
+  .grid-container h3{
+    color: rgb(247, 67, 97);
+    transition: color 0.3s; 
+  }
+.grid-container h3:hover {
+    color: red;
+  }
+  
+.Add button{
+    background-color:rgb(248, 179, 31);
+    width: 96%;
+    text-align: center;
+}
+
+.Add button:hover {
+    background-color: #b37a00;
+}
+
+
+.grid-item1 {
+    transition: transform 0.3s;
+}
+
+.grid-item1:hover {
+    transform: scale(1.1);
+}
+   
+.grid-item2 {
+    transition: transform 0.3s;
+}
+
+.grid-item2:hover {
+    transform: scale(1.1);
+}
+.grid-item3 {
+    transition: transform 0.3s;
+}
+
+.grid-item3:hover {
+    transform: scale(1.1);
+}
+.grid-item4 {
+    transition: transform 0.3s;
+}
+
+.grid-item4:hover {
+    transform: scale(1.1);
+}
+.grid-item5 {
+    transition: transform 0.3s;
+}
+
+.grid-item5:hover {
+    transform: scale(1.1);
+}
+.grid-item6 {
+    transition: transform 0.3s;
+}
+
+.grid-item6:hover {
+    transform: scale(1.1);
+}
+.grid-item7 {
+    transition: transform 0.3s;
+}
+
+.grid-item7:hover {
+    transform: scale(1.1);
+}
+.grid-item8 {
+    transition: transform 0.3s;
+}
+
+.grid-item8:hover {
+    transform: scale(1.1);
+}
+.grid-item9 {
+    transition: transform 0.3s;
+}
+
+.grid-item9:hover {
+    transform: scale(1.1);
+}
+.grid-item10 {
+    transition: transform 0.3s;
+}
+
+.grid-item10:hover {
+    transform: scale(1.1);
+}
+
+.offers-section {
+  
+    padding: 20px;
+    text-align: center;
+}
+
+.offers-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.offer {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.offer-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.offer-description {
+    color: #666;
+}
+
+.bank-offer {
+    color: #fff;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 66px;
+    color: white;
+    margin-top: 66px;
+    background-color:#333
+}
+</style>
+<body>
+    
+    <header>
+        <h1>Handicrafter</h1>
+    </header>
+    <main>
+        <div class="product-info">
+            <img src="https://s3.amazonaws.com/megastores-prod-bucket/images/w21626262823600.jpg">
+            <h3>9999</h3>
+            <p>In stock</p>
+            </div>
+        <div class="order-form">
+            <h1>Order Now</h1>
+            <form action="checkout.php" method="post">
+               <div class="description">
+                <h3>Maroon Rogan Art Kurti Cotton Fabric by Sun Rogan Arts Size: 11.7 X 18.5inch.</h3>
+                    <p>The artistic nature and undeniable glory of these paintings will uplift the overall beauty of your walls. The plain and boring walls will ooze out charm and vibrancy as you install these creatively designed paintings. Inspired from unique thoughts and designed in an artistic way, these paintings will give your surroundings an indigenous and dramatic appeal. 100 % Authenticated Genuine Hand Painted Art work Perfect Wall Art for Living Room, Bedroom, Office, Hotels, Workplace etc. Ideal gift for any occasion Care Instruction: Clean with mild soap and soft cloth to remove dust Hand oil painting on Canvas. Pattern: Modern; Subject: Nature Finish: Hand Painted Framed Wall Art , Ready to hang It can be nice gift for loved one on Diwali, New Year, Christmna, Holi etc. Our Paintings all are hand painted(Non-print)</p>
+                    <ul>
+                <li><p>Model Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27</li></p>
+                
+                <li><p>Frame Included
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes</li></p>
+                    <li><p>
+                    Wall Mount
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes</li></p>
+                    <li><p>
+                    Pack of
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01</li></p>
+                    <li><p>
+                    Base Material
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cloth</li></p>
+                    <li><p>
+                    Art Form Type
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batik</li></p>
+                    <li><p>
+                    Frame Material
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pine Wood</li></p>
+                    <li><p>
+                    Net Quantity
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01</li></p></ul></div>
+                <label  for="quantity"><b>Quantity</b></label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                <button type="submit"><a href='buynow.html'>&nbsp;&nbsp;&nbsp;&nbsp;Buy Now</a></button>
+                <div class="Add ">
+                <button type="submit" ><a href='buynow.html'>&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</a></button>
+                </div>
+            </form>
+            
+        </div>    
+    </main>
+   <div class="offers-section">
+            <h2 class="offers-heading">Special Offers</h2>
+            <div class="offer">
+                <h3 class="offer-title">50% Off on hand-made-canvas-paintings</h3>
+                <p class="offer-description">Get amazing deals on the latest gadgets and electronics.</p>
+            </div>
+            <div class="offer">
+                <h3 class="offer-title">Free Shipping</h3>
+                <p class="offer-description">Enjoy free shipping on your first order. And also get free shipping over $50.</p>
+            </div>
+            <div class="offer bank-offer">
+                <h3 class="offer-title">Bank Offer</h3>
+                <p class="offer-description">Use SBI Bank card to get an extra 10% discount on all purchases.</p>
+            </div>
+        </div>
+       
+
+        
+
+
+
+
+
+
+    <hr>
+    <h2>Similer Products</h2>
+    <div class="grid-container">
+        <div class="grid-item1"><img src="https://rukminim2.flixcart.com/image/416/416/jnxhx8w0/painting/a/g/r/20-delight-craft-india-original-imafagju9wktxmz2.jpeg?q=70">
+        <p>Delight Craft India Hand Painting on Canvas 30CM X 40CM, tradistional art , wall Painting With frame, wall Decor art living room bed room.</p>
+        <h3>5000</h3>
+        </div>
+        <div class="grid-item2"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/painting/v/x/5/8-1-hand-craft-modern-art-for-wall-decor-canvas-for-home-office-original-imaggwpwsfzrsfbw.jpeg?q=90">
+        <p>Bhim hand craft modern art for wall decor Canvas for home & office/cafe decoration Canvas 12 inch x 8 inch Painting  (With Frame)</p>
+        <h3>3999</h3>
+        </div>
+        <div class="grid-item3"><img src="https://rukminim2.flixcart.com/image/416/416/l1dwknk0/painting/g/l/d/19-1-wall-decor-handcraft-modern-jute-art-in-a-glass-frame-for-original-imagcyh4ytkfjvy8.jpeg?q=70">
+        <p>  Bhim Modern hand craft Jute art in a glass frame for Bedroom & living room(wall decor) Acrylic 19 inch x 12 inch Painting  (With Frame)</p>
+        <h3>4899</h3>
+        </div>
+        <div class="grid-item4"><img src="https://4.imimg.com/data4/NL/UU/MY-717586/hand-made-canvas-paintings-500x500.jpg">
+        <p> Owing to the years of industrial experience, we have been able to serve our valued clients with a wide range of Hand Made Paintings.</p>
+        <h3>3499</h3>
+        </div>
+        <div class="grid-item5"><img src="https://5.imimg.com/data5/SELLER/Default/2022/10/QA/DG/XO/5621290/multicolor-hand-craft-flower-painting.jpg">
+        <p>Paper Gouache Multicolor Hand Craft Flower Painting, For Bedroom Wall Decoration, Size: 11.5 X 16.5inch range of Hand Made Paintings.</p>
+        <h3>6700</h3>
+        </div>
+        <div class="grid-item6"><img src="https://www.creatingreallyawesomefunthings.com/wp-content/uploads/2012/05/Cactus-handprint.jpg">
+        <p>Hand Painted Radha Krishna Madhubani Painting by The India Craft Project</p>
+        <h3>8900</h3>
+        </div>
+        <div class="grid-item7"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcVKTK7_LVszheKOk-J6KbNyE0D5XkxfUNfQ&usqp=CAU">
+        <p>Blue Rogan Art Tree of Life Multicolor Peacock Painting by Sun Rogan Arts</p>
+        <h3>1099</h3>
+        </div>
+        <div class="grid-item8"><img src="https://s3.amazonaws.com/megastores-prod-bucket/images/111626261523485.jpg">
+        <p>Blue Rogan Art Tree of Life Multicolor Peacock Painting by Sun Rogan Arts</p>
+        <h3>8099</h3>
+        </div>
+        <div class="grid-item9"><img src="https://s3.amazonaws.com/megastores-prod-bucket/images/.1,21626258392583.jpg">
+        <p>Black Rogan Art Tree of Life Painting by Sun Rogan Arts Size: 11.5 X 16.5inch.</p>
+        <h3>7800</h3>
+        </div>
+        <div class="grid-item10"><img src="https://s3.amazonaws.com/megastores-prod-bucket/images/2.21626258696516.jpg">
+        <p>Blue and Yellow Rogan Art Tree of Life Painting by Sun Rogan Arts Size: 12.5 X 15.5inch.</p>
+        <h3>5700</h3>
+        </div>
+    </div>
+</html>
+
+        
+    
+
+    <footer>
+        <div class="footer">
+            <div class="text">
+                <h3>About Us</h3>
+                <p>24 Hour's avilable</p>
+                <p>Best Quality products</p>
+                <p>Best delivery</p>
+                <p>Patient</p>
+
+            </div>
+            <div class="text">
+                <h3>Speciality</h3>
+                <p>Rare items</p>
+                <p>24 Hour's delivery</p>
+                <p>Safe</p>
+                <p>unique</p>
+
+            </div>
+            <div class="text">
+                <h3>Best Teams</h3>
+                <p>Products wraping</p>
+                <p>Shipping</p>
+                <p>Staff</p>
+                <p>delivery</p>
+
+            </div>
+            <div class="text">
+                <h3>Address</h3>
+                <p>LPU</p>
+                <p> BH2</p>
+                <p>333-00222</p>
+                <p>2222-4334</p>
+
+            </div>
+        </div>
+
+        <div class="content">
+            <button id="close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="contentDetail">
+
+            </div>
+        </div>
+
+    </div>
+    </footer>
+</body>
+</html>

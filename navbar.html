@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to right, #eda9e6, #00ffd5);
+            padding: 10px 0;
+            padding: 14px 20px;
+        }
+
+        .navbar a {
+            color: #f2f2f2;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+
+            color: black;
+        }
+
+        .search-container {
+            margin-right: 16px;
+        }
+
+        .search-container input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .search-container button {
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: lightcoral;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background: blue;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+         background-image: url(https://img.freepik.com/free-vector/low-poly-white-background-design_1017-33204.jpg);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .grid-item img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.2);
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(to right, #4CAF50, #379683);
+            color: white;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <section>
+        <div class="navbar">
+            <img src="img/handi.png" alt="Logo" width="80px" height="80px">
+            <a href="#">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="cart.html">Cart</a>
+            <div class="dropdown">
+                <button class="dropbtn">User
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="profile.html">Profile</a>
+                    <a href="change pass.html">Change Password</a>
+                    <a href="logout">Logout</a>
+                </div>
+            </div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w3-content w3-section">
+            <img class="mySlides" src="img/download.jpg" style="width:100%">
+            <img class="mySlides" src="img/download (1).jpeg" style="width:100%">
+            <img class="mySlides" src="img/download (2).jpeg" style="width:100%">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+        </script>
+    </section>
+    <section>
+        <div class="grid">
+            <div class="grid-item">
+                <a href="First.html">
+                  <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/painting/v/x/5/8-1-hand-craft-modern-art-for-wall-decor-canvas-for-home-office-original-imaggwpwsfzrsfbw.jpeg?q=90"> 
+            
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="second.html">
+                   <img src="https://rukminim2.flixcart.com/image/416/416/l1dwknk0/painting/g/l/d/19-1-wall-decor-handcraft-modern-jute-art-in-a-glass-frame-for-original-imagcyh4ytkfjvy8.jpeg?q=70">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="third.html">
+                  <img src="https://4.imimg.com/data4/NL/UU/MY-717586/hand-made-canvas-paintings-500x500.jpg">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="fourth.html">
+                  <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/QA/DG/XO/5621290/multicolor-hand-craft-flower-painting.jpg">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="fiefth.html">
+                  <img src="https://www.creatingreallyawesomefunthings.com/wp-content/uploads/2012/05/Cactus-handprint.jpg">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="sixt.html">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcVKTK7_LVszheKOk-J6KbNyE0D5XkxfUNfQ&usqp=CAU">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="seven.html">
+                 <img src="https://s3.amazonaws.com/megastores-prod-bucket/images/111626261523485.jpg">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="eighth.html">
+                 <img src="https://s3.amazonaws.com/megastores-prod-bucket/images/.1,21626258392583.jpg">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="ninth.html">
+                  <img src="https://s3.amazonaws.com/megastores-prod-bucket/images/w21626262823600.jpg">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="tenth.html">
+                  <img src="https://s3.amazonaws.com/megastores-prod-bucket/images/2.21626258696516.jpg">
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="First.html">
+                  <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/painting/v/x/5/8-1-hand-craft-modern-art-for-wall-decor-canvas-for-home-office-original-imaggwpwsfzrsfbw.jpeg?q=90">           <h3>3999</h3>
+                    
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="second.html">
+                  <img src="https://rukminim2.flixcart.com/image/416/416/l1dwknk0/painting/g/l/d/19-1-wall-decor-handcraft-modern-jute-art-in-a-glass-frame-for-original-imagcyh4ytkfjvy8.jpeg?q=70">
+                    
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        &copy; 2022 Handicrafter. All rights reserved.
+        <a href="https://www.facebook.com"><img
+                src="https://cdn.icon-icons.com/icons2/2699/PNG/512/facebook_logo_icon_168870.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com"><img
+                src="https://cdn.icon-icons.com/icons2/2699/PNG/512/instagram_logo_icon_168864.png" alt="Instagram"></a>
+        <a href="https://www.twitter.com"><img
+                src="https://cdn.icon-icons.com/icons2/2699/PNG/512/twitter_logo_icon_168862.png" alt="Twitter"></a>
+    </footer>
+</body>
+
+</html>

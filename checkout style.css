@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://media.istockphoto.com/id/583726578/photo/wood-desk-plank-to-use-as-background-or-texture.webp?b=1&s=170667a&w=0&k=20&c=U28o8rPkbKTEudWGqile3Zd0jlS4Hl69Z6-lz04oRLc=);
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    
+    
+}
+
+
+input {
+    padding: 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: large;
+    
+}
+
+
+
+
+
+.checkout{
+    text-align:center;
+    font-family: fantasy ;
+    color: rgb(165, 165, 165);
+    font-size: large;
+}
+
+.Shipping{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.peyment{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    margin-left: 30%;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+button:hover::before {
+    width: 200px;
+    height: 100px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#address-payment-form label{
+  
+    font-size: large;
+    color: rgb(131, 131, 131);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+#address-payment-form label p{
+    color: rgb(255, 239, 9);
+    font-family: 'Courier New', Courier, monospace;
+}
+.image{
+height: 200px;
+width: 50%;
+margin-left: 27%;
+
+}
+
+#description1 {
+    display: none;
+    margin-top: 10px;
+    position: calc(center);
+}
+#description2 {
+    display: none;
+    margin-top: 10px;
+}
+
+.butto{
+    margin-left: 38%;
+    background-color:green;
+}
